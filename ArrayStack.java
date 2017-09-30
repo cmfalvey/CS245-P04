@@ -47,8 +47,7 @@ public class ArrayStack implements Stack {
 
 	@Override
 	public Object peek() {
-		// TODO Auto-generated method stub
-		return null;
+		return stack[0];
 	}
 
 	@Override
@@ -58,12 +57,10 @@ public class ArrayStack implements Stack {
 	 * Args: 	none
 	 */
 	public boolean empty() {
-		for (int i = 0; i < stack.length; i++) {
-			if (stack[i] != null) {
-				return false;
-			}
+		if (stack[0] == null) {
+			return true;
 		}
-		return true;
+		return false;
 	} /*	empty	*/
 
 }

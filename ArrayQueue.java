@@ -52,12 +52,10 @@ public class ArrayQueue implements Queue {
 	 * Args:	none
 	 */
 	public boolean empty() {
-		for (int i = 0; i < queue.length; i++) {
-			if (queue[i] != null) {
-				return false;
-			}
+		if (queue[0] == null) {
+			return true;
 		}
-		return true;
+		return false;
 	} /*	empty	*/
 
 }
